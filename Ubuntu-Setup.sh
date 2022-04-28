@@ -38,7 +38,13 @@ sudo snap install 1password
 # Install Gnome Dock
 sudo apt-get -y install gnome-tweaks
 sudo apt-get -y install gnome-shell-extensions
+sudo apt-get -y install gnome-shell-extension-autohidetopbar
 xdg-open https://extensions.gnome.org/extension/307/dash-to-dock/
+xdg-open https://extensions.gnome.org/extension/1238/time/
+xdg-open https://extensions.gnome.org/extension/779/clipboard-indicator/
+xdg-open https://extensions.gnome.org/extension/1036/extensions/
+xdg-open https://extensions.gnome.org/extension/1319/gsconnect/
+xdg-open https://extensions.gnome.org/extension/517/caffeine/
 
 # Install ProtonVPN
 wget https://protonvpn.com/download/protonvpn-beta-release_1.0.1-1_all.deb
