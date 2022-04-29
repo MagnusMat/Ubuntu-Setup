@@ -55,6 +55,15 @@ xdg-open https://extensions.gnome.org/extension/1036/extensions/
 xdg-open https://extensions.gnome.org/extension/1319/gsconnect/
 xdg-open https://extensions.gnome.org/extension/517/caffeine/
 
+# Install R
+sudo apt-get -y install r-base r-base-dev
+sudo apt-get -y install libatlas3-base
+pip3 install -U radian
+R
+install.packages("languageserver")
+install.packages("httpgd")
+q()
+
 # Install ProtonVPN
 wget https://protonvpn.com/download/protonvpn-beta-release_1.0.1-1_all.deb
 sudo dpkg -i protonvpn-beta-release_1.0.1-1_all.deb
