@@ -30,10 +30,19 @@ sudo snap install cmake --classic
 # Update
 sudo apt -y update; sudo apt -y upgrade
 
-# Install miscellaneous programs
+# Install miscellaneous snaps and flatpaks
+sudo apt-get -y install flatpak
+sudo apt-get -y install gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo snap install code --classic
 sudo snap install 1password
 sudo snap install flameshot
+sudo snap install htop
+sudo snap install onionshare
+sudo snap install teams
+sudo snap install powershell --classic
+flatpak install -y flathub com.obsproject.Studio
+flatpak install -y flathub com.mojang.Minecraft
 
 # Install Gnome Dock
 sudo apt-get -y install gnome-tweaks
