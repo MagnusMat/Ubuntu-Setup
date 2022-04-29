@@ -21,6 +21,7 @@ sudo apt-get -y install bison
 sudo apt-get -y install flex
 sudo apt-get -y install python3
 sudo apt-get -y install python3-venv
+sudo apt-get -y install python3-pip
 sudo apt-get -y install lua5.2
 sudo apt-get -y install lua5.2-dev
 sudo apt-get -y install curl
