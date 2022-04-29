@@ -32,8 +32,8 @@ sudo apt -y update; sudo apt -y upgrade
 
 # Install miscellaneous programs
 sudo snap install code --classic
-sudo snap install vlc
 sudo snap install 1password
+sudo snap install flameshot
 
 # Install Gnome Dock
 sudo apt-get -y install gnome-tweaks
