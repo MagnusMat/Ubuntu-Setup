@@ -110,3 +110,7 @@ wget -qO - https://mirror.mwt.me/ghd/gpgkey | sudo tee /etc/apt/trusted.gpg.d/sh
 sudo sh -c 'echo "deb [arch=amd64] https://mirror.mwt.me/ghd/deb/ any main" > /etc/apt/sources.list.d/packagecloud-shiftkey-desktop.list'
 sudo apt -y update
 sudo apt-get -y install github-desktop
+
+# Change autocomplete functionality
+touch ~/.inputrc
+printf "set menu-complete-display-prefix On\n\"\CTAB\": possible-completions\nTAB: menu-complete\n\"\x1b[Z\": menu-complete-backward" >> ~/.inputrc
