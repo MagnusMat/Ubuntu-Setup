@@ -42,6 +42,7 @@ sudo snap install htop
 sudo snap install onionshare
 sudo snap install teams
 sudo snap install powershell --classic
+sudo snap install emote
 flatpak install -y flathub com.obsproject.Studio
 flatpak install -y flathub com.mojang.Minecraft
 
@@ -55,6 +56,7 @@ xdg-open https://extensions.gnome.org/extension/779/clipboard-indicator/
 xdg-open https://extensions.gnome.org/extension/1036/extensions/
 xdg-open https://extensions.gnome.org/extension/1319/gsconnect/
 xdg-open https://extensions.gnome.org/extension/517/caffeine/
+xdg-open https://github.com/tom-james-watson/Emote/wiki/Hotkey-In-Wayland
 
 # Install R
 sudo apt-get -y install r-base r-base-dev
