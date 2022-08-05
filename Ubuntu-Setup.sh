@@ -56,6 +56,7 @@ xdg-open https://extensions.gnome.org/extension/779/clipboard-indicator/
 xdg-open https://extensions.gnome.org/extension/1036/extensions/
 xdg-open https://extensions.gnome.org/extension/1319/gsconnect/
 xdg-open https://extensions.gnome.org/extension/517/caffeine/
+xdg-open https://extensions.gnome.org/extension/5236/material-you-color-theming/
 xdg-open https://github.com/tom-james-watson/Emote/wiki/Hotkey-In-Wayland
 
 # Install R
