@@ -34,6 +34,7 @@ sudo apt -y update; sudo apt -y upgrade
 # Install miscellaneous snaps and flatpaks
 sudo apt-get -y install flatpak
 sudo apt-get -y install gnome-software-plugin-flatpak
+sudo apt-get -y install dotnet6
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo snap install code --classic
 sudo snap install 1password
@@ -86,7 +87,7 @@ rm -f tor-browser-linux64-11.0.10_en-US.tar.xz
 cd tor-browser_en-US/
 ./start-tor-browser.desktop --register-app
 
-cd..
+cd ~
 
 # Install Fonts
 sudo apt-get -y install fonts-firacode
@@ -98,14 +99,14 @@ mkdir ~/.fonts
 cp FiraCodeiScript/FiraCodeiScript-Regular.ttf ~/.fonts
 cp FiraCodeiScript/FiraCodeiScript-Italic.ttf ~/.fonts
 cp FiraCodeiScript/FiraCodeiScript-Bold.ttf ~/.fonts
-cd ..
+cd ~
 yes | rm -r FiraCodeiScript/
 
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts 
 cd nerd-fonts/
 ./install.sh FiraCode
 ./install.sh FiraMono
-cd..
+cd ~
 yes | rm -r nerd-fonts/
 
 # Install Github Desktop
