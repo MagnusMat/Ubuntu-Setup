@@ -38,12 +38,11 @@ sudo apt-get -y install dotnet6
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo snap install code --classic
 sudo snap install 1password
-sudo snap install flameshot
 sudo snap install htop
-sudo snap install onionshare
 sudo snap install teams
 sudo snap install powershell --classic
 sudo snap install emote
+flatpak install -y flathub org.onionshare.OnionShare
 flatpak install -y flathub com.obsproject.Studio
 flatpak install -y flathub com.mojang.Minecraft
 
@@ -51,7 +50,6 @@ flatpak install -y flathub com.mojang.Minecraft
 sudo apt-get -y install gnome-tweaks
 sudo apt-get -y install gnome-shell-extensions
 sudo apt-get -y install gnome-shell-extension-autohidetopbar
-xdg-open https://extensions.gnome.org/extension/307/dash-to-dock/
 xdg-open https://extensions.gnome.org/extension/1238/time/
 xdg-open https://extensions.gnome.org/extension/779/clipboard-indicator/
 xdg-open https://extensions.gnome.org/extension/1036/extensions/
@@ -83,7 +81,7 @@ sudo apt-get -y install gir1.2-appindicator3-0.1
 # Install Tor
 wget https://www.torproject.org/dist/torbrowser/11.0.10/tor-browser-linux64-11.0.10_en-US.tar.xz
 tar -xf tor-browser-linux64-11.0.10_en-US.tar.xz
-rm -f tor-browser-linux64-11.0.10_en-US.tar.xz  
+rm -f tor-browser-linux64-11.0.10_en-US.tar.xz
 cd tor-browser_en-US/
 ./start-tor-browser.desktop --register-app
 
@@ -102,7 +100,7 @@ cp FiraCodeiScript/FiraCodeiScript-Bold.ttf ~/.fonts
 cd ~
 yes | rm -r FiraCodeiScript/
 
-git clone --depth 1 https://github.com/ryanoasis/nerd-fonts 
+git clone --depth 1 https://github.com/ryanoasis/nerd-fonts
 cd nerd-fonts/
 ./install.sh FiraCode
 ./install.sh FiraMono
