@@ -114,6 +114,4 @@ sudo apt -y update
 sudo apt-get -y install github-desktop
 
 # Change autocomplete functionality
-touch ~/.inputrc
-
-wget -O ~/.inputrc https://raw.githubusercontent.com/MagnusMat/Windows-Terminal-Setup/main/.zshrc
+wget -O ~/.inputrc https://raw.githubusercontent.com/MagnusMat/Ubuntu-Setup/main/.inputrc
