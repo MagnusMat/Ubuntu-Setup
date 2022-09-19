@@ -1,0 +1,4 @@
+set menu-complete-display-prefix On
+"\CTAB": possible-completions
+TAB: menu-complete
+"^[[Z": menu-complete-backward

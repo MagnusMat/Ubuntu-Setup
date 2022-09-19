@@ -115,4 +115,5 @@ sudo apt-get -y install github-desktop
 
 # Change autocomplete functionality
 touch ~/.inputrc
-printf "set menu-complete-display-prefix On\n\"\CTAB\": possible-completions\nTAB: menu-complete\n\"\x1b[Z\": menu-complete-backward" >> ~/.inputrc
+
+wget -O ~/.inputrc https://raw.githubusercontent.com/MagnusMat/Windows-Terminal-Setup/main/.zshrc
