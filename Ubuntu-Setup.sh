@@ -50,7 +50,6 @@ flatpak install -y flathub com.mojang.Minecraft
 sudo apt-get -y install gnome-tweaks
 sudo apt-get -y install gnome-shell-extensions
 sudo apt-get -y install gnome-shell-extension-autohidetopbar
-xdg-open https://extensions.gnome.org/extension/307/dash-to-dock/
 xdg-open https://extensions.gnome.org/extension/1238/time/
 xdg-open https://extensions.gnome.org/extension/779/clipboard-indicator/
 xdg-open https://extensions.gnome.org/extension/1036/extensions/
