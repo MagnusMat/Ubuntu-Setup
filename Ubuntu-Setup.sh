@@ -46,7 +46,7 @@ flatpak install -y flathub org.onionshare.OnionShare
 flatpak install -y flathub com.obsproject.Studio
 flatpak install -y flathub com.mojang.Minecraft
 
-# Install Gnome Dock
+# Install Gnome Extensions
 sudo apt-get -y install gnome-tweaks
 sudo apt-get -y install gnome-shell-extensions
 sudo apt-get -y install gnome-shell-extension-autohidetopbar
@@ -57,6 +57,7 @@ xdg-open https://extensions.gnome.org/extension/1319/gsconnect/
 xdg-open https://extensions.gnome.org/extension/517/caffeine/
 xdg-open https://extensions.gnome.org/extension/5236/material-you-color-theming/
 xdg-open https://github.com/tom-james-watson/Emote/wiki/Hotkey-In-Wayland
+flatpak install flathub com.mattjakeman.ExtensionManager
 
 # Install R
 sudo apt-get -y install r-base r-base-dev
