@@ -51,13 +51,10 @@ flatpak install -y flathub com.mojang.Minecraft
 # Install Gnome Extensions
 sudo apt-get -y install gnome-tweaks
 sudo apt-get -y install gnome-shell-extensions
-sudo apt-get -y install gnome-shell-extension-autohidetopbar
+xdg-open https://extensions.gnome.org/extension/545/hide-top-bar/
 xdg-open https://extensions.gnome.org/extension/1238/time/
 xdg-open https://extensions.gnome.org/extension/779/clipboard-indicator/
-xdg-open https://extensions.gnome.org/extension/1036/extensions/
 xdg-open https://extensions.gnome.org/extension/1319/gsconnect/
-xdg-open https://extensions.gnome.org/extension/517/caffeine/
-xdg-open https://extensions.gnome.org/extension/5236/material-you-color-theming/
 xdg-open https://github.com/tom-james-watson/Emote/wiki/Hotkey-In-Wayland
 flatpak install -y flathub com.mattjakeman.ExtensionManager
 
@@ -71,9 +68,9 @@ install.packages("httpgd")
 q()
 
 # Install ProtonVPN
-wget https://protonvpn.com/download/protonvpn-beta-release_1.0.1-1_all.deb
-sudo dpkg -i protonvpn-beta-release_1.0.1-1_all.deb
-rm -f protonvpn-beta-release_1.0.1-1_all.deb
+wget `lynx -dump -listonly -nonumbers https://protonvpn.com/support/linux-ubuntu-vpn-setup/ | grep -E "*.deb" | head -1`
+sudo dpkg -i `find . -name 'protonvpn-stable-release_*'`
+rm -f `find . -name 'protonvpn-stable-release_*'`
 sudo apt -y update
 sudo apt-get -y install protonvpn
 
@@ -82,9 +79,9 @@ sudo apt-get -y install gnome-shell-extension-appindicator
 sudo apt-get -y install gir1.2-appindicator3-0.1
 
 # Install Tor
-wget https://www.torproject.org/dist/torbrowser/11.0.10/tor-browser-linux64-11.0.10_en-US.tar.xz
-tar -xf tor-browser-linux64-11.0.10_en-US.tar.xz
-rm -f tor-browser-linux64-11.0.10_en-US.tar.xz
+wget `lynx -dump -listonly -nonumbers https://www.torproject.org/download/ | grep -E "*.tar.xz" | head -1`
+tar -xf `find . -name '*tor-browser-linux64*'`
+rm -f `find . -name '*tor-browser-linux64*.tar.xz'`
 cd tor-browser_en-US/
 ./start-tor-browser.desktop --register-app
 
