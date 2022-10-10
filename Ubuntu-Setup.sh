@@ -98,7 +98,6 @@ mkdir ~/.fonts
 cp FiraCodeiScript/FiraCodeiScript-Regular.ttf ~/.fonts
 cp FiraCodeiScript/FiraCodeiScript-Italic.ttf ~/.fonts
 cp FiraCodeiScript/FiraCodeiScript-Bold.ttf ~/.fonts
-cd ~
 yes | rm -r FiraCodeiScript/
 
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts
