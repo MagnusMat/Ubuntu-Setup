@@ -25,6 +25,7 @@ sudo apt-get -y install python3-pip
 sudo apt-get -y install lua5.2
 sudo apt-get -y install lua5.2-dev
 sudo apt-get -y install curl
+sudo apt-get -y install mpv
 
 sudo snap install cmake --classic
 
