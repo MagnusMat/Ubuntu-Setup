@@ -94,7 +94,6 @@ sudo apt-get -y install fonts-firacode
 sudo apt-get -y install fonts-open-sans
 
 git clone https://github.com/kencrocken/FiraCodeiScript
-cd FiraCodeiScript
 mkdir ~/.fonts
 cp FiraCodeiScript/FiraCodeiScript-Regular.ttf ~/.fonts
 cp FiraCodeiScript/FiraCodeiScript-Italic.ttf ~/.fonts
