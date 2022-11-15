@@ -27,6 +27,7 @@ sudo apt-get -y install lua5.2
 sudo apt-get -y install lua5.2-dev
 sudo apt-get -y install curl
 sudo apt-get -y install mpv
+sudo apt-get -y install lynx
 
 sudo snap install cmake --classic
 
