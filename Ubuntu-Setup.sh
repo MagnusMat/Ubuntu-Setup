@@ -10,6 +10,7 @@ sudo add-apt-repository universe
 sudo add-apt-repository multiverse
 sudo add-apt-repository restricted
 
+sudo apt-get -y remove unattended-upgrades
 sudo apt-get -y install wget
 sudo apt-get -y install git
 sudo apt-get -y install build-essential
