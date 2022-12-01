@@ -38,7 +38,6 @@ sudo apt -y update; sudo apt -y upgrade
 # Install miscellaneous snaps and flatpaks
 sudo apt-get -y install flatpak
 sudo apt-get -y install gnome-software-plugin-flatpak
-sudo apt-get -y install dotnet6
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo snap install code --classic
 sudo snap install 1password
