@@ -46,6 +46,7 @@ sudo snap install htop
 sudo snap install teams
 sudo snap install powershell --classic
 sudo snap install emote
+sudo snap install nextcloud-desktop-client
 flatpak install -y flathub org.onionshare.OnionShare
 flatpak install -y flathub com.obsproject.Studio
 flatpak install -y flathub com.mojang.Minecraft
@@ -100,16 +101,14 @@ sudo mkdir -p /usr/share/debsig/keyrings/AC2D62742012EA22
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
  sudo gpg --dearmor --output /usr/share/debsig/keyrings/AC2D62742012EA22/debsig.gpg
 
-sudo apt update && sudo apt install 1password-cli
+sudo apt-get -y update
+sudo apt-get -y install 1password-cli
 
 # Install DotNet
-sudo apt-get update && \
-  sudo apt-get install -y dotnet7
-
-sudo apt-get update && \
-  sudo apt-get install -y aspnetcore-runtime-7.0
-
-sudo apt-get install -y dotnet-runtime-7.0
+sudo apt-get -y update
+sudo apt-get -y install dotnet7
+sudo apt-get -y install aspnetcore-runtime-7.0
+sudo apt-get -y install dotnet-runtime-7.0
 
 # Install ProtonVPN
 wget `lynx -dump -listonly -nonumbers https://protonvpn.com/support/linux-ubuntu-vpn-setup/ | grep -E "*.deb" | head -1`
@@ -152,7 +151,7 @@ yes | rm -r nerd-fonts/
 # Install Github Desktop
 wget -qO - https://mirror.mwt.me/ghd/gpgkey | sudo tee /etc/apt/trusted.gpg.d/shiftkey-desktop.asc > /dev/null
 sudo sh -c 'echo "deb [arch=amd64] https://mirror.mwt.me/ghd/deb/ any main" > /etc/apt/sources.list.d/packagecloud-shiftkey-desktop.list'
-sudo apt -y update
+sudo apt-get -y update
 sudo apt-get -y install github-desktop
 
 # Change autocomplete functionality
