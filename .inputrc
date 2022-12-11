@@ -2,3 +2,4 @@ set menu-complete-display-prefix On
 "\CTAB": possible-completions
 TAB: menu-complete
 "^[[Z": menu-complete-backward
+echo 'set completion-ignore-case On' | sudo tee -a /etc/inputrc
