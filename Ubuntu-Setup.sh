@@ -14,7 +14,7 @@ sudo apt-get -y remove unattended-upgrades
 sudo apt-get -y install wget
 sudo apt-get -y install git
 sudo apt-get -y install build-essential
-sudo apt-get -y install g++
+sudo apt-get -y install clang
 sudo apt-get -y install zip
 sudo apt-get -y install unzip
 sudo apt-get -y install make
