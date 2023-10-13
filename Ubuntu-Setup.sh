@@ -324,12 +324,10 @@ sudo mv `find . -name '*-stable_mono_linux_x86_64'` /opt/Godot
 cd /opt/Godot
 
 mv `find . -name '*-stable_mono_linux.x86_64'` Godot
+curl -o Icon.png https://raw.githubusercontent.com/MagnusMat/Ubuntu-Setup/main/Icons/godot.png
 
 touch ~/.local/share/applications/godot.desk
-
-"[Desktop Entry]\nName=Godot\nExec=/opt/Godot/Godot\n
-Icon=icon name\nTerminal=false\nType=Application\nStartupNotify=true"
- >> ~/.local/share/applications/godot.desk
+"[Desktop Entry]\nName=Godot\nExec=/opt/Godot/Godot\nIcon=/opt/Godot/Icon.png\nTerminal=false\nType=Application\nStartupNotify=true">> ~/.local/share/applications/godot.desk
 
 # Gradience
 flatpak install flathub -y com.github.GradienceTeam.Gradience
