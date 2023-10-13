@@ -3,49 +3,39 @@
 cd ~
 
 # -------------------- Functions --------------------
+#!/bin/bash
 
-function Set-Confirmation { #ToDo
-    param (
-        [string]$Question,
-        [string[]]$ValidOptions = @('y', 'n')
-    )
+# Initialize confirmation variables
+confirmation_nvidia_amd=""
+confirmation_games=""
+confirmation_emulators=""
 
-    do {
-        $Confirmation = Read-Host "$Question"
-        if ($Confirmation -notin $ValidOptions) {
-            Write-Host "You need to pick a valid option"
-        }
-    } while ($Confirmation -notin $ValidOptions)
+# Function for asking a yes/no question with valid options
+function set_confirmation {
+    local variable_name=$1
+    local question=$2
+    local valid_options=("${@:3}")
 
-    return $Confirmation
+    while true; do
+        read -p "$question" $variable_name
+        if [[ ! " ${valid_options[@]} " =~ " ${!variable_name} " ]]; then
+            echo "You need to pick a valid option"
+        else
+            return
+        fi
+    done
 }
 
 # -------------------- Confirmations --------------------
 
-# Prompt for Install Drive #ToDo
-$ConfirmationDrive = Set-Confirmation -Question "Do you want to install software the C: or D: drive c/d" -ValidOptions 'c', 'd'
+# Graphics Card Architecture Prompt
+set_confirmation "confirmation_nvidia_amd" "Are you installing on a Nvidia or AMD system (n/a)?" n a
 
-if ($ConfirmationDrive -eq 'c') {
-    $InstallDrive = "C:\Program Files"
-}
-if ($ConfirmationDrive -eq 'd') {
-    $InstallDrive = "D:"
-}
+# Games Prompt
+set_confirmation "confirmation_games" "Do you want to install Games (y/n)?" y n
 
-# Install Laptop Desktop Prompt #ToDo
-$ConfirmationLaptopDesktop = Set-Confirmation -Question "Are you installing on a Laptop or Desktop l/d" -ValidOptions 'l', 'd'
-
-# Graphics Card Architecture Prompt #ToDo
-$ConfirmationNvidiaAMD = Set-Confirmation -Question "Are you installing on a Nvidia or AMD system n/a" -ValidOptions 'n', 'a'
-
-# Games Prompt #ToDo
-$ConfirmationGames = Set-Confirmation -Question "Do you want to install Games y/n"
-
-# Emulator prompt #ToDo
-$ConfirmationEmulators = Set-Confirmation -Question "Do you want to install Emulators y/n"
-
-# Windows Terminal Settings Prompt #ToDo
-$ConfirmationWindowsTerm = Set-Confirmation -Question "Do you want to replace the Windows Terminal Settings? This will not work if you have a Windows Terminal instance open y/n"
+# Emulator prompt
+set_confirmation "confirmation_emulators" "Do you want to install Emulators (y/n)?" y n
 
 # -------------------- Initial Setup - Updates & Package Managers --------------------
 
@@ -102,9 +92,6 @@ sh -c "$(wget -4 https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/inst
 
 # Change Zsh Theme
 wget -O ~/.zshrc https://raw.githubusercontent.com/MagnusMat/Windows-Terminal-Setup/main/.zshrc
-
-# Change autocomplete functionality #ToDO
-wget -O ~/.inputrc https://raw.githubusercontent.com/MagnusMat/Ubuntu-Setup/main/.inputrc
 
 # Download Wallpaper
 curl -o ~/Downloads/Planets.jpg https://raw.githubusercontent.com/MagnusMat/Ubuntu-Setup/main/Desktop/Planets%20Wallpaper.jpg
@@ -174,13 +161,16 @@ urls+=(https://extensions.gnome.org/extension/545/hide-top-bar/)
 # Privacy Quick Settings
 urls+=(https://extensions.gnome.org/extension/4491/privacy-settings-menu/)
 
+# Syncthing Indicator
+urls+=(https://extensions.gnome.org/extension/1070/syncthing-indicator/)
+
 # Drivers and Software for AMD Radeon
-if [ "$confirmationNvidiaAMD" = 'a' ]; then
+if [ "$confirmation_nvidia_amd" = 'a' ]; then
     urls+=("https://www.amd.com/en/support/linux-drivers")
 fi
 
 # Drivers and Software for Nvidia RTX
-if [ "$confirmationNvidiaAMD" = 'a' ]; then
+if [ "$confirmation_nvidia_amd" = 'a' ]; then
     urls+=(https://www.nvidia.com/en-us/geforce/drivers/)
 fi
 
@@ -447,12 +437,10 @@ echo "deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://
 sudo apt update -y
 sudo apt install -y syncthing
 
-# Sync #ToDo
-
 # Transmission
 sudo apt install -y transmission
 
-# Tor Browser #ToDO
+# Tor Browser
 wget `lynx -dump -listonly -nonumbers https://www.torproject.org/download/ | grep -E "*.tar.xz" | head -1`
 tar -xvf `find . -name '*tor-browser-linux-*'`
 rm -f `find . -name '*tor-browser-linux-*.tar.xz'`
@@ -477,7 +465,7 @@ sudo apt install -y yubikey-manager
 
 # -------------------- Game Launchers & Emulators --------------------
 
-if ($confirmationGames -eq 'y') {
+if ($confirmation_games -eq 'y') {
     # GOG Galaxy & Epic Games Launcher
     flatpak install flathub -y com.heroicgameslauncher.hgl
     
@@ -494,7 +482,7 @@ if ($confirmationGames -eq 'y') {
     flatpak install flathub -y net.lutris.Lutris
 }
 
-if ($confirmationEmulators -eq 'y') {
+if ($confirmation_emulators -eq 'y') {
     # Cemu
     flatpak install flathub -y info.cemu.Cemu
     
