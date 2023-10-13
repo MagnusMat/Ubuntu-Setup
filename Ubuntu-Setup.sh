@@ -290,7 +290,6 @@ sudo apt install -y ./docker-desktop.deb
 
 yes | rm docker-desktop.deb
 
-# Add the repository to Apt sources:
 echo \
   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
