@@ -39,9 +39,6 @@ set_confirmation "confirmation_emulators" "Do you want to install Emulators (y/n
 
 # -------------------- Initial Setup - Updates & Package Managers --------------------
 
-# Fix backslash
-echo -e "[Desktop Entry]\nName=Backslash\nExec=xmodmap -e \"keycode 52 = z Z z Z backslash backslash\"\nTerminal=false\nType=Application" >> ~/.config/autostart
-
 # Remove packages
 sudo apt remove -y unattended-upgrades
 
