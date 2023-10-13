@@ -268,6 +268,9 @@ flatpak install flathub -y com.rafaelmardojai.Blanket
 # Blender
 sudo apt install -y blender
 
+# Bottles
+flatpak install flathub -y com.usebottles.bottles
+
 # Boxes
 flatpak install flathub -y org.gnome.Boxes
 
