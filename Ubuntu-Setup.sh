@@ -325,9 +325,6 @@ sudo add-apt-repository -y ppa:inkscape.dev/stable
 sudo apt update -y
 sudo apt install -y inkscape
 
-# JDK Adoptium JDK 17
-sudo apt install -y temurin-21-jdk
-
 # Jupyter Notebook
 pip install jupyter
 
