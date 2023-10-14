@@ -195,10 +195,6 @@ sudo apt install -y flex
 # GCC & G++
 sudo apt install -y build-essential
 
-# Lua
-sudo apt install -y lua5.2
-sudo apt install -y lua5.2-dev
-
 # Lynx
 sudo apt install -y lynx
 
