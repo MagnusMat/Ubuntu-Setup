@@ -311,6 +311,8 @@ curl -o Icon.png https://raw.githubusercontent.com/MagnusMat/Ubuntu-Setup/main/I
 touch ~/.local/share/applications/godot.desk
 "[Desktop Entry]\nName=Godot\nExec=/opt/Godot/Godot\nIcon=/opt/Godot/Icon.png\nTerminal=false\nType=Application\nStartupNotify=true">> ~/.local/share/applications/godot.desk
 
+cd ~
+
 # Gradience
 flatpak install flathub -y com.github.GradienceTeam.Gradience
 
@@ -324,13 +326,6 @@ sudo apt install -y htop
 sudo add-apt-repository -y ppa:inkscape.dev/stable
 sudo apt update -y
 sudo apt install -y inkscape
-
-# KDE Connect
-sudo apt install -y kdeconnect
-
-# LaTeX-OCR
-pip install torch torchvision torchaudio
-pip install pix2tex[gui]
 
 # Libre Office
 flatpak install flathub -y org.libreoffice.LibreOffice
