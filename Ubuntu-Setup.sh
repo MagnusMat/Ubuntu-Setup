@@ -325,9 +325,6 @@ sudo add-apt-repository -y ppa:inkscape.dev/stable
 sudo apt update -y
 sudo apt install -y inkscape
 
-# Jupyter Notebook
-pip install jupyter
-
 # KDE Connect
 sudo apt install -y kdeconnect
 
