@@ -222,11 +222,7 @@ sudo apt install -y ffmpeg
 sudo apt install -y pandoc
 
 # PowerShell 7
-wget https://github.com/PowerShell/PowerShell/releases/download/v7.4.0-preview.5/powershell-preview_7.4.0-preview.5-1.deb_amd64.deb
-
-sudo dpkg -i powershell-preview_7.4.0-preview.5-1.deb_amd64.deb
-
-yes | rm powershell-preview_7.4.0-preview.5-1.deb_amd64.deb
+sudo snap install powershell --classic
 
 # -------------------- Programs --------------------
 
