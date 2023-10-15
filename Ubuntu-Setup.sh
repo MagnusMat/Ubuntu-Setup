@@ -288,6 +288,9 @@ sudo snap install drawio
 # Emote
 flatpak install flathub -y com.tomjwatson.Emote
 
+# EyeDropper
+flatpak install flathub com.github.finefindus.eyedropper
+
 # Gnome Tweaks
 sudo apt install -y gnome-tweaks
 
@@ -348,13 +351,6 @@ sudo apt install -y gnome-shell-pomodoro
 # Postman
 sudo snap install postman
 
-# Powertoys #ToDO
-#   - Color Picker
-#   - Paste as plain text
-#   - PowerRename
-#   - Text Extractor
-#   - Screen ruler
-
 # ProtonVPN
 curl -O https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3-2_all.deb
 
@@ -387,6 +383,9 @@ echo "deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://
 
 sudo apt update -y
 sudo apt install -y syncthing
+
+# Text Snatcher
+flatpak install flathub com.github.rajsolai.textsnatcher
 
 # Transmission
 sudo apt install -y transmission
