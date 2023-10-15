@@ -342,6 +342,9 @@ sudo apt install -y ./pdfsam.deb
 
 rm pdfsam.deb
 
+# Pomodoro
+sudo apt install -y gnome-shell-pomodoro
+
 # Postman
 sudo snap install postman
 
@@ -351,9 +354,6 @@ sudo snap install postman
 #   - PowerRename
 #   - Text Extractor
 #   - Screen ruler
-
-# Pomodoro
-sudo apt install -y gnome-shell-pomodoro
 
 # ProtonVPN
 curl -O https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3-2_all.deb
@@ -408,11 +408,6 @@ sudo snap install code --classic
 
 # Wireshark
 sudo apt install -y wireshark
-
-# Yubikey Manager
-sudo apt-add-repository -y ppa:yubico/stable
-sudo apt update -y
-sudo apt install -y yubikey-manager
 
 # -------------------- Game Launchers & Emulators --------------------
 
