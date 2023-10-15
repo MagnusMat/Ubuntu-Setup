@@ -295,23 +295,7 @@ sudo apt install -y gnome-tweaks
 sudo apt install -y gnome-shell-extension-manager
 
 # Godot
-gh release download -R godotengine/godot --pattern "*-stable_mono_linux_x86_64.zip"
-
-unzip `find . -name '*-stable_mono_linux_x86_64.zip'`
-
-yes | rm `find . -name '*-stable_mono_linux_x86_64.zip'`
-
-sudo mv `find . -name '*-stable_mono_linux_x86_64'` /opt/Godot
-
-cd /opt/Godot
-
-mv `find . -name '*-stable_mono_linux.x86_64'` Godot
-curl -o Icon.png https://raw.githubusercontent.com/MagnusMat/Ubuntu-Setup/main/Icons/godot.png
-
-touch ~/.local/share/applications/godot.desk
-"[Desktop Entry]\nName=Godot\nExec=/opt/Godot/Godot\nIcon=/opt/Godot/Icon.png\nTerminal=false\nType=Application\nStartupNotify=true">> ~/.local/share/applications/godot.desk
-
-cd ~
+sudo snap install gd-godot-engine-mono-snapcraft
 
 # Gradience
 flatpak install flathub -y com.github.GradienceTeam.Gradience
@@ -395,8 +379,6 @@ yes | rm `find . -name '*x86_64.deb'`
 flatpak install flathub -y org.shotcut.Shotcut
 
 # Stacer
-sudo add-apt-repository -y ppa:oguzhaninan/stacer
-sudo apt update -y
 sudo apt install -y stacer
 
 # Syncthing
