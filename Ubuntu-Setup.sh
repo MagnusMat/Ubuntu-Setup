@@ -158,9 +158,6 @@ urls+=(https://extensions.gnome.org/extension/545/hide-top-bar/)
 # Privacy Quick Settings
 urls+=(https://extensions.gnome.org/extension/4491/privacy-settings-menu/)
 
-# Syncthing Indicator
-urls+=(https://extensions.gnome.org/extension/1070/syncthing-indicator/)
-
 # Drivers and Software for AMD Radeon
 if [ "$confirmation_nvidia_amd" = 'a' ]; then
     urls+=(https://www.amd.com/en/support/linux-drivers)
