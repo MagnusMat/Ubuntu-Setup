@@ -317,6 +317,9 @@ flatpak install flathub -y org.libreoffice.LibreOffice
 # Microsoft Edge
 flatpak install flathub -y com.microsoft.Edge
 
+# Mission Center
+flatpak install flathub -y io.missioncenter.MissionCenter
+
 # Mozilla Thunderbird
 flatpak install flathub -y org.mozilla.Thunderbird
 
@@ -371,9 +374,6 @@ yes | rm `find . -name '*x86_64.deb'`
 # Shotcut
 flatpak install flathub -y org.shotcut.Shotcut
 
-# Stacer
-sudo apt install -y stacer
-
 # Syncthing
 sudo curl -o /usr/share/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
 echo "deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
@@ -382,7 +382,7 @@ sudo apt update -y
 sudo apt install -y syncthing
 
 # Text Snatcher
-flatpak install flathub com.github.rajsolai.textsnatcher
+flatpak install flathub -y com.github.rajsolai.textsnatcher
 
 # Transmission
 sudo apt install -y transmission
@@ -401,6 +401,9 @@ cd ~
 
 # Visual Studio Code
 sudo snap install code --classic
+
+# Warehouse
+flatpak install flathub -y io.github.flattool.Warehouse
 
 # Wireshark
 sudo apt install -y wireshark
