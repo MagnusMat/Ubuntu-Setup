@@ -140,23 +140,32 @@ yes | rm -r SegoeFonts segoe
 # Create a list of urls
 urls=()
 
+# Blur my shell
+urls+=(https://extensions.gnome.org/extension/3193/blur-my-shell)
+
 # Clipboard History
-urls+=(https://extensions.gnome.org/extension/4839/clipboard-history/)
+urls+=(https://extensions.gnome.org/extension/4839/clipboard-history)
 
 # Emote Hotkeys
-urls+=(https://github.com/tom-james-watson/Emote/wiki/Hotkey-In-Wayland/)
+urls+=(https://github.com/tom-james-watson/Emote/wiki/Hotkey-In-Wayland)
 
 # Firefox Vertical Tabs
 urls+=(https://github.com/ranmaru22/firefox-vertical-tabs)
 
 # GSConnect
-urls+=(https://extensions.gnome.org/extension/1319/gsconnect/)
+urls+=(https://extensions.gnome.org/extension/1319/gsconnect)
 
 # Hide Top Bar
-urls+=(https://extensions.gnome.org/extension/545/hide-top-bar/)
+urls+=(https://extensions.gnome.org/extension/545/hide-top-bar)
+
+# Open Weather
+urls+=(https://extensions.gnome.org/extension/750/openweather)
 
 # Privacy Quick Settings
-urls+=(https://extensions.gnome.org/extension/4491/privacy-settings-menu/)
+urls+=(https://extensions.gnome.org/extension/4491/privacy-settings-menu)
+
+# Vitals
+urls+=(https://extensions.gnome.org/extension/1460/vitals)
 
 # Drivers and Software for AMD Radeon
 if [ "$confirmation_nvidia_amd" = 'a' ]; then
@@ -165,7 +174,7 @@ fi
 
 # Drivers and Software for Nvidia RTX
 if [ "$confirmation_nvidia_amd" = 'a' ]; then
-    urls+=(https://www.nvidia.com/en-us/geforce/drivers/)
+    urls+=(https://www.nvidia.com/en-us/geforce/drivers)
 fi
 
 for url in "${urls[@]}"; do
