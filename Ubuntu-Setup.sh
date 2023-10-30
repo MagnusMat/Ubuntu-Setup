@@ -149,6 +149,9 @@ urls+=(https://extensions.gnome.org/extension/4839/clipboard-history)
 # Emote Hotkeys
 urls+=(https://github.com/tom-james-watson/Emote/wiki/Hotkey-In-Wayland)
 
+# EteSync
+urls+=(https://github.com/etesync/etesync-dav/wiki/Installing-EteSync-DAV-on-Linux)
+
 # Firefox Vertical Tabs
 urls+=(https://github.com/ranmaru22/firefox-vertical-tabs)
 
@@ -160,6 +163,9 @@ urls+=(https://extensions.gnome.org/extension/545/hide-top-bar)
 
 # Open Weather
 urls+=(https://extensions.gnome.org/extension/750/openweather)
+
+# PhotoGIMP
+urls+=(https://github.com/Diolinux/PhotoGIMP)
 
 # Privacy Quick Settings
 urls+=(https://extensions.gnome.org/extension/4491/privacy-settings-menu)
@@ -247,6 +253,9 @@ sudo apt update -y && sudo apt install -y 1password
 # 1Password CLI
 sudo apt install -y 1password-cli
 
+# Authenticator
+flatpak install flathub -y com.belmoussaoui.Authenticator
+
 # Blanket
 flatpak install flathub -y com.rafaelmardojai.Blanket
 
@@ -261,6 +270,18 @@ flatpak install flathub -y org.gnome.Boxes
 
 # Calibre
 sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
+
+# Citations
+flatpak install flathub -y org.gnome.World.Citations
+
+# Collision
+flatpak install flathub -y dev.geopjr.Collision
+
+# Commit
+flatpak install flathub -y re.sonny.Commit
+
+# Cozy
+flatpak install flathub -y com.github.geigi.cozy
 
 # Déjà Dup Backups
 flatpak install flathub -y org.gnome.DejaDup
@@ -297,6 +318,18 @@ flatpak install flathub -y com.tomjwatson.Emote
 # EyeDropper
 flatpak install flathub com.github.finefindus.eyedropper
 
+# Font Downloader
+flatpak install flathub -y org.gustavoperedo.FontDownloader
+
+# Forge Sparks
+flatpak install flathub -y com.mardojai.ForgeSparks
+
+# Getting Things GNOME!
+flatpak install flathub -y org.gnome.GTG
+
+# GIMP
+flatpak install flathub -y org.gimp.GIMP
+
 # Gnome Tweaks
 sudo apt install -y gnome-tweaks
 
@@ -315,10 +348,16 @@ flatpak install flathub -y fr.handbrake.ghb
 # htop
 sudo apt install -y htop
 
+# Impression
+flatpak install flathub -y io.gitlab.adhami3310.Impression
+
 # Inkscape
 sudo add-apt-repository -y ppa:inkscape.dev/stable
 sudo apt update -y
 sudo apt install -y inkscape
+
+# Komikku
+flatpak install flathub -y info.febvre.Komikku
 
 # Libre Office
 flatpak install flathub -y org.libreoffice.LibreOffice
@@ -338,6 +377,9 @@ flatpak install flathub -y org.mozilla.firefox
 # MPV
 sudo apt install -y mpv
 
+# NewsFlash
+flatpak install flathub -y io.gitlab.news_flash.NewsFlash
+
 # NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 
@@ -346,6 +388,9 @@ flatpak install flathub -y com.obsproject.Studio
 
 # Onion Share
 flatpak install flathub -y org.onionshare.OnionShare
+
+# Pika Backup
+flatpak install flathub -y org.gnome.World.PikaBackup
 
 # PDF Sam
 wget -O pdfsam.deb `lynx -dump -listonly -nonumbers https://pdfsam.org/download-pdfsam-basic/ | grep -E "*.deb" | head -1`
@@ -363,7 +408,7 @@ sudo snap install postman
 # ProtonVPN
 curl -O https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3-2_all.deb
 
-sudo apt install -y ./protonvpn-stable-release_1.0.3-2_all.deb 
+sudo apt install -y ./protonvpn-stable-release_1.0.3-2_all.deb
 sudo apt update -y
 
 sudo apt install -y protonvpn
@@ -393,9 +438,6 @@ sudo apt install -y syncthing
 # Text Snatcher
 flatpak install flathub -y com.github.rajsolai.textsnatcher
 
-# Transmission
-sudo apt install -y transmission
-
 # Tor Browser
 wget `lynx -dump -listonly -nonumbers https://www.torproject.org/download/ | grep -E "*.tar.xz" | head -1`
 tar -xvf `find . -name '*tor-browser-linux-*'`
@@ -408,11 +450,20 @@ cd /opt/tor-browser
 
 cd ~
 
+# Transmission
+sudo apt install -y transmission
+
+# Tuba
+flatpak install flathub -y dev.geopjr.Tuba
+
 # Visual Studio Code
 sudo snap install code --classic
 
 # Warehouse
 flatpak install flathub -y io.github.flattool.Warehouse
+
+# Wike
+flatpak install flathub -y com.github.hugolabe.Wike
 
 # Wireshark
 sudo apt install -y wireshark
@@ -422,7 +473,7 @@ sudo apt install -y wireshark
 if ($confirmation_games -eq 'y') {
     # GOG Galaxy & Epic Games Launcher
     flatpak install flathub -y com.heroicgameslauncher.hgl
-    
+
     # Minecraft
     flatpak install flathub -y org.prismlauncher.PrismLauncher
 
@@ -431,7 +482,7 @@ if ($confirmation_games -eq 'y') {
 
     # Steam
     flatpak install flathub -y com.valvesoftware.Steam
-    
+
     # Lutris
     flatpak install flathub -y net.lutris.Lutris
 }
@@ -439,13 +490,13 @@ if ($confirmation_games -eq 'y') {
 if ($confirmation_emulators -eq 'y') {
     # Cemu
     flatpak install flathub -y info.cemu.Cemu
-    
+
     # Citra
     flatpak install flathub -y org.citra_emu.citra
 
     # Dolphin
     flatpak install flathub -y org.DolphinEmu.dolphin-emu
-    
+
     # PCSX2
     flatpak install flathub -y net.pcsx2.PCSX2
 
@@ -463,13 +514,13 @@ if ($confirmation_emulators -eq 'y') {
 
     # RetroArch
     flatpak install flathub -y org.libretro.RetroArch
-    
+
     # RPCS3
     flatpak install flathub -y net.rpcs3.RPCS3
-    
+
     # Ryujinx
     flatpak install flathub -y org.ryujinx.Ryujinx
-    
+
     # SNES9X
     flatpak install flathub -y com.snes9x.Snes9x
 
