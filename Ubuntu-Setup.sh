@@ -287,7 +287,7 @@ flatpak install flathub -y com.github.geigi.cozy
 flatpak install flathub -y org.gnome.DejaDup
 
 # Discord
-sudo snap install discord
+flatpak install flathub -y com.discordapp.Discord
 
 # Docker Desktop
 sudo apt install -y ca-certificates gnupg
