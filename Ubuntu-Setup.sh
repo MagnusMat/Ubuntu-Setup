@@ -318,6 +318,9 @@ flatpak install flathub -y com.tomjwatson.Emote
 # EyeDropper
 flatpak install flathub com.github.finefindus.eyedropper
 
+# Flatseal
+flatpak install flathub -y com.github.tchx84.Flatseal
+
 # Font Downloader
 flatpak install flathub -y org.gustavoperedo.FontDownloader
 
