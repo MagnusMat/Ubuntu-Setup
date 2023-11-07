@@ -271,6 +271,9 @@ flatpak install flathub -y org.gnome.Boxes
 # Calibre
 sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
 
+# Celeste
+flatpak install flathub -y com.hunterwittenborn.Celeste
+
 # Citations
 flatpak install flathub -y org.gnome.World.Citations
 
@@ -316,7 +319,7 @@ sudo snap install drawio
 flatpak install flathub -y com.tomjwatson.Emote
 
 # EyeDropper
-flatpak install flathub com.github.finefindus.eyedropper
+flatpak install flathub -y com.github.finefindus.eyedropper
 
 # Flatseal
 flatpak install flathub -y com.github.tchx84.Flatseal
