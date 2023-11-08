@@ -271,9 +271,6 @@ flatpak install flathub -y org.gnome.Boxes
 # Calibre
 sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
 
-# Celeste
-flatpak install flathub -y com.hunterwittenborn.Celeste
-
 # Citations
 flatpak install flathub -y org.gnome.World.Citations
 
