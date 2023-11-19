@@ -321,6 +321,9 @@ flatpak install flathub -y com.github.finefindus.eyedropper
 # Flatseal
 flatpak install flathub -y com.github.tchx84.Flatseal
 
+# Foliate
+flatpak install flathub -y com.github.johnfactotum.Foliate
+
 # Font Downloader
 flatpak install flathub -y org.gustavoperedo.FontDownloader
 
