@@ -340,7 +340,7 @@ flatpak install flathub -y org.gimp.GIMP
 sudo apt install -y gnome-tweaks
 
 # Gnome Shell Extensions Manager
-sudo apt install -y gnome-shell-extension-manager
+flatpak install flathub -y com.mattjakeman.ExtensionManager
 
 # Godot
 sudo snap install gd-godot-engine-mono-snapcraft
@@ -433,6 +433,9 @@ yes | rm `find . -name '*x86_64.deb'`
 
 # Shotcut
 flatpak install flathub -y org.shotcut.Shotcut
+
+# Switcheroo
+flatpak install flathub -y io.gitlab.adhami3310.Converter
 
 # Syncthing
 sudo curl -o /usr/share/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
