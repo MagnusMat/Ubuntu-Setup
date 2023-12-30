@@ -315,6 +315,9 @@ sudo snap install drawio
 # Emote
 flatpak install flathub -y com.tomjwatson.Emote
 
+# Errands
+flatpak install flathub -y io.github.mrvladus.List
+
 # EyeDropper
 flatpak install flathub -y com.github.finefindus.eyedropper
 
@@ -330,9 +333,6 @@ flatpak install flathub -y org.gustavoperedo.FontDownloader
 # Forge Sparks
 flatpak install flathub -y com.mardojai.ForgeSparks
 
-# Getting Things GNOME!
-flatpak install flathub -y org.gnome.GTG
-
 # GIMP
 flatpak install flathub -y org.gimp.GIMP
 
@@ -347,6 +347,9 @@ sudo snap install gd-godot-engine-mono-snapcraft
 
 # Gradience
 flatpak install flathub -y com.github.GradienceTeam.Gradience
+
+# Graphs
+flatpak install flathub -y se.sjoerd.Graphs
 
 # Handbrake
 flatpak install flathub -y fr.handbrake.ghb
