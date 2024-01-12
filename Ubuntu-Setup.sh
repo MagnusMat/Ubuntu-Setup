@@ -427,6 +427,9 @@ yes | rm protonvpn-stable-release_1.0.3-2_all.deb
 # PuTTY
 flatpak install flathub -y uk.org.greenend.chiark.sgtatham.putty
 
+# Pympress
+sudo apt install -y pympress libgtk-3-0 libpoppler-glib8 libcairo2 python3-gi python3-gi-cairo gobject-introspection libgirepository-1.0-1 gir1.2-gtk-3.0 gir1.2-poppler-0.18
+
 # RustDesk
 gh release download -R rustdesk/rustdesk --pattern "*-x86_64.deb"
 
