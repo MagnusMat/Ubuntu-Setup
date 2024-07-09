@@ -428,9 +428,6 @@ flatpak install flathub -y uk.org.greenend.chiark.sgtatham.putty
 # Pympress
 sudo apt install -y pympress libgtk-3-0 libpoppler-glib8 libcairo2 python3-gi python3-gi-cairo gobject-introspection libgirepository-1.0-1 gir1.2-gtk-3.0 gir1.2-poppler-0.18
 
-# Raspberry Pi Imager
-sudo apt install -y rpi-imager
-
 # RustDesk
 gh release download -R rustdesk/rustdesk --pattern "*-x86_64.deb"
 
