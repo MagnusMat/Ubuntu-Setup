@@ -170,8 +170,17 @@ urls+=(https://github.com/Diolinux/PhotoGIMP)
 # Privacy Quick Settings
 urls+=(https://extensions.gnome.org/extension/4491/privacy-settings-menu)
 
+# Proton Mail
+urls+=(https://proton.me/mail/download)
+
+# Proton Pass
+urls+=(https://proton.me/pass/download)
+
 # Vitals
 urls+=(https://extensions.gnome.org/extension/1460/vitals)
+
+# Yubico Authenticator
+urls+=(https://www.yubico.com/products/yubico-authenticator/#h-download-yubico-authenticator)
 
 # Drivers and Software for AMD Radeon
 if [ "$confirmation_nvidia_amd" = 'a' ]; then
