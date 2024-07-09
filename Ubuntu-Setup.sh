@@ -315,6 +315,13 @@ sudo snap install drawio
 # Emote
 flatpak install flathub -y com.tomjwatson.Emote
 
+# Ente Auth
+gh release download -R ente-io/ente --pattern "ente-auth-*-x86_64.deb"
+
+sudo apt install -y `find . -name 'ente-auth-*-x86_64.deb'`
+
+yes | rm `find . -name 'ente-auth-*-x86_64.deb'`
+
 # Errands
 flatpak install flathub -y io.github.mrvladus.List
 
@@ -323,6 +330,9 @@ flatpak install flathub -y com.github.finefindus.eyedropper
 
 # Flatseal
 flatpak install flathub -y com.github.tchx84.Flatseal
+
+# Floorp Browser
+flatpak install flathub -y one.ablaze.floorp
 
 # Foliate
 flatpak install flathub -y com.github.johnfactotum.Foliate
@@ -380,9 +390,6 @@ flatpak install flathub -y io.missioncenter.MissionCenter
 # Mozilla Thunderbird
 flatpak install flathub -y org.mozilla.Thunderbird
 
-# Mozilla Firefox
-flatpak install flathub -y org.mozilla.firefox
-
 # MPV
 sudo apt install -y mpv
 
@@ -407,9 +414,6 @@ wget -O pdfsam.deb `lynx -dump -listonly -nonumbers https://pdfsam.org/download-
 sudo apt install -y ./pdfsam.deb
 
 rm pdfsam.deb
-
-# Pomodoro
-sudo apt install -y gnome-shell-pomodoro
 
 # Postman
 sudo snap install postman
