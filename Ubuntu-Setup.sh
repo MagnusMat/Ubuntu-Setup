@@ -399,15 +399,18 @@ flatpak install flathub -y com.obsproject.Studio
 # Onion Share
 flatpak install flathub -y org.onionshare.OnionShare
 
-# Pika Backup
-flatpak install flathub -y org.gnome.World.PikaBackup
-
 # PDF Sam
 wget -O pdfsam.deb `lynx -dump -listonly -nonumbers https://pdfsam.org/download-pdfsam-basic/ | grep -E "*.deb" | head -1`
 
 sudo apt install -y ./pdfsam.deb
 
 rm pdfsam.deb
+
+# Pika Backup
+flatpak install flathub -y org.gnome.World.PikaBackup
+
+# Pomatez
+sudo snap install pomatez
 
 # ProtonVPN
 curl -O https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3-2_all.deb
