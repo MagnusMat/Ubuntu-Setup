@@ -152,14 +152,14 @@ urls+=(https://github.com/tom-james-watson/Emote/wiki/Hotkey-In-Wayland)
 # EteSync
 urls+=(https://github.com/etesync/etesync-dav/wiki/Installing-EteSync-DAV-on-Linux)
 
-# Firefox Vertical Tabs
-urls+=(https://github.com/ranmaru22/firefox-vertical-tabs)
-
 # GSConnect
 urls+=(https://extensions.gnome.org/extension/1319/gsconnect)
 
 # Hide Top Bar
 urls+=(https://extensions.gnome.org/extension/545/hide-top-bar)
+
+# LanguageTool LibreOffice Extension
+urls+=(https://languagetool.org/insights/post/product-libreoffice/#how-to-enable-languagetool-on-libreoffice)
 
 # Open Weather
 urls+=(https://extensions.gnome.org/extension/750/openweather)
@@ -253,9 +253,6 @@ sudo apt update -y && sudo apt install -y 1password
 # 1Password CLI
 sudo apt install -y 1password-cli
 
-# Authenticator
-flatpak install flathub -y com.belmoussaoui.Authenticator
-
 # Blanket
 flatpak install flathub -y com.rafaelmardojai.Blanket
 
@@ -270,9 +267,6 @@ flatpak install flathub -y org.gnome.Boxes
 
 # Calibre
 sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
-
-# Citations
-flatpak install flathub -y org.gnome.World.Citations
 
 # Collision
 flatpak install flathub -y dev.geopjr.Collision
@@ -415,9 +409,6 @@ sudo apt install -y ./pdfsam.deb
 
 rm pdfsam.deb
 
-# Postman
-sudo snap install postman
-
 # ProtonVPN
 curl -O https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3-2_all.deb
 
@@ -483,9 +474,6 @@ flatpak install flathub -y io.github.flattool.Warehouse
 
 # Wike
 flatpak install flathub -y com.github.hugolabe.Wike
-
-# Wireshark
-sudo apt install -y wireshark
 
 # -------------------- Game Launchers & Emulators --------------------
 
