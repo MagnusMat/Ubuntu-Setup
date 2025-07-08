@@ -90,9 +90,6 @@ sh -c "$(wget -4 https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/inst
 # Change Zsh Theme
 wget -O ~/.zshrc https://raw.githubusercontent.com/MagnusMat/Windows-Terminal-Setup/main/.zshrc
 
-# Download Wallpaper
-curl -o ~/Downloads/Planets.jpg https://raw.githubusercontent.com/MagnusMat/Ubuntu-Setup/main/Desktop/Planets%20Wallpaper.jpg
-
 # GitHub Cli Login
 gh auth login
 
