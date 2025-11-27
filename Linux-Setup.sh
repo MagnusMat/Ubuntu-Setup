@@ -259,6 +259,9 @@ sudo apt update -y && sudo apt install -y 1password
 # 1Password CLI
 sudo apt install -y 1password-cli
 
+# Bambu Studio
+flatpak install flathub -y com.bambulab.BambuStudio
+
 # Blanket
 flatpak install flathub -y com.rafaelmardojai.Blanket
 
